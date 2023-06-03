@@ -1,0 +1,122 @@
+body{
+    background-color: whitesmoke;
+    color: white;
+    padding: 20px;
+    transition: all 0.3s ease-in;
+}
+.tutorial-item{
+    color: rgb(255, 255, 255);
+}
+
+#tutorialForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-align: left;
+    color: white;
+    background-color: #1c2e4a;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+#update-tutorialForm{
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #1E1E1E;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.title{
+    height: 30px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 15px;
+    transition: all 0.2s ease-in;
+    font-size: 16px;
+    width: 100%;
+}
+.title:is(:focus){
+    border-color: #4671EA;
+    box-shadow: rgba(11, 0, 129, 0.1) 0px 8px 24px;   
+}
+#update-tutorialForm #description1{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: #fbfbfb;
+}
+
+#description1::-webkit-scrollbar{
+    width: 0px;
+    height: 29px;
+}
+#tutorialForm #description{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: #1E1E1E;
+}
+
+#description::-webkit-scrollbar{
+    width: 0px;
+    height: 29px;
+}
+
+.button{
+    height: 40px;
+    background-color: #4671EA;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.checkbox{
+    width: 36px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tutorial-item{
+    background-color: #1c2e4a;
+    padding: 10px;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#pagination, #paginationAll {
+    color: black;
+}

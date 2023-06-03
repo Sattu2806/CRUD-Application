@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD Application Youtube</title>
+</head>
+<body>
+    <div class="container">
+        <form id="tutorialForm">
+            <input class="title" type="text" autocomplete="off" name="title" placeholder="Enter Title" required>
+            <textarea name="description" id="description" placeholder="Enter Description" cols="30" rows="10"></textarea>
+            <input class="checkbox" type="checkbox" name="published" value="true"> Published / Not Published
+            <button class="button" type="submit">Submit</button>
+          </form>  
+            <div>
+                <h1 style="color: black;">Published</h1>
+            <div id="tutorialList">
+            </div>
+            <div id="pagination"></div>
+            </div>    
+          <form id="update-tutorialForm">
+            <input class="title" autocomplete="off" type="text" name="update-title" placeholder="Enter Title" required>
+            <textarea name="update-description" id="description1" placeholder="Enter Description" cols="30" rows="10"></textarea>
+            <input class="checkbox" type="checkbox" name="update-published" value="true"> Published / Not Published
+            <button class="button" type="submit">Submit</button>
+          </form>  
+          <div>
+            <h1 style="color: black;">ALL tutorials</h1>
+            <div id="tutorialAllList">
+            </div>
+            <div id="paginationAll"></div>
+        </div> 
+    
+    
+    </div>
+    <script>
+        const textarea = document.getElementById("description1");
+
+        textarea.addEventListener("input", () => {
+        textarea.style.height = "auto";
+        textarea.style.height = `${textarea.scrollHeight}px`;
+        });
+
+        const textarea1 = document.getElementById("description");
+
+        textarea1.addEventListener("input", () => {
+        textarea1.style.height = "auto";
+        textarea1.style.height = `${textarea1.scrollHeight}px`;
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
